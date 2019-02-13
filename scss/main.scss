@@ -1,7 +1,107 @@
-$primary-color: #444;
+@import 'config';
 
-body {
-  background: $primary-color;
-  color: #fff;
+// * => selecting everything in css
+* {
+  box-sizing: border-box;
 }
 
+body {
+  @include background;
+  background: $primary-color;
+  // color: #000000;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  // font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  // font-family: 'Reem Kufi', sans-serif;
+  line-height: 1.5;
+}
+
+// headings
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading{
+    font-size: 6rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1 rem;
+    // background: lighten($primary-color, 2);
+  }
+}
+
+a {
+  // color: #000000;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  // z-index; how close the element is
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+
+  // nesting the icons 
+  .icons-social{
+    margin-top: 1rem;
+    a {
+      padding: 0.4rem;
+
+      &:hover{
+        color: $secondary-color;
+        @include easeOut();
+      }
+    }
+  }
+
+  // any main that has the id of home
+  &#home {
+    overflow: hidden;
+
+    h1 {
+      // vh; viewport height, another unit
+      margin-top: 20vh;
+    }
+  }
+}
+
+
+// landing page css
+
+// main {
+// 	display: flex;
+// 	flex-direction: column;
+// 	min-height: 100vh;
+// 	justify-content: center;
+// 	padding: 0 30px;
+// 	text-align: center;
+// }
+
+
+// main > .lg-heading {
+// 	font-family: 'Reem Kufi', sans-serif;
+// 	font-size: 3.75em;
+// 	font-weight: 600;
+// }
+
+// main > .sm-heading {
+// 	font-size: 1.5rem;
+// 	margin: 1.5rem 0;
+//   font-weight: 100;
+//   font-family: 'Reem Kufi', sans-serif;
+// }
