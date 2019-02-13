@@ -1,0 +1,19 @@
+// Menu button
+.menu-btn {
+  position: absolute;
+  z-index: 3; 
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeOut;
+
+// button line
+  .btn-line {
+    width: 28px;
+    height: 3px;
+    // top , top-right, bottom, left
+    margin: 0 0 5px 0;
+    background: #fff;
+    @include easeOut;
+  }
+}
