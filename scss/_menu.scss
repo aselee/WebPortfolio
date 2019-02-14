@@ -43,13 +43,15 @@
   }
 }
 
+/////////////////////
+
 // Creating Menu Overlay
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
   //optional opacity
-  opacity: 1;
+  // opacity: 1;
   visibility: hidden;
 
   // Making menu button visible when clicked
@@ -67,12 +69,17 @@
       width: 50%;
       height: 100vh;
       overflow: hidden;
+      // background transpancy
+      background: rgba($primary-color, 0.9);
   }
 
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+
+    // background: darken($primary-color, 5);
+    background: rgba(darken($primary-color, 5), 0.9);
+
     // taking the bullet points off
     list-style: none;
     // -100% comes from the top; 100% comes from the bottom
@@ -85,7 +92,8 @@
     }
   }
 
-  // profile portrait
+
+// profile portrait
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
@@ -108,7 +116,55 @@
 
     }
   }
+
+  // moving the nav-item list from the right
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeOut;
+
+    &.show {
+      // slide in from the right
+      transform: translate3d(0, 0, 0);
+    }
+    // class current a tag links with color
+    // Home link will have secondary color automatically
+    
+    // &.current > a {
+    //   color: $secondary-color;
+    // }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    
+    @include easeOut;
+
+    // when hover links, color will show
+    &:hover {
+      color: $secondary-color;
+    }
+  }
 }
+
+//////////////////////
+
+// Creating a delay for each nav-item
+// using sass for-loop
+// delaying each nav-item slide
+// for(let x = 0; i < 4; i++)
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.15s;
+  }
+}
+
 
 // transform css
 // https://developer.mozilla.org/en-US/docs/Web/CSS/transform
