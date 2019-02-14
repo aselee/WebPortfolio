@@ -11,7 +11,7 @@ const navItem = document.querySelectorAll('.nav-item');
 
 let showMenu = false;
 
-// need an eventlistener
+// need an addeventlistener
 menuButton.addEventListener('click', toggleMenu);
 
 // want to show the classes as well as closed classes
@@ -38,7 +38,8 @@ function toggleMenu() {
     navItem.forEach(item => item.classList.remove('show'));
 
     // Set Menu State
-    showMenu = true;
+    // as false to close the menu
+    showMenu = false;
   }
 }
 
