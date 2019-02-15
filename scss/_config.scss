@@ -35,3 +35,32 @@ $background-opacity: 0.2;
   }
 }
 
+// media queries mixins web responsiveness
+
+// anything that is in the mixin will automatically be responsive
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+// adding range
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+// anything higher than 1171px
+@mixin mediaXl {
+  @media screen and (max-width: 1171px) {
+    @content;
+  }
+}
+//////////////////////////

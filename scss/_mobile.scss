@@ -1,0 +1,63 @@
+// Web Responsiveness
+
+// desktop
+@include mediaXl {
+  
+}
+
+// laptops
+@include mediaLg {
+
+}
+// tablets
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+
+    // setting the heading title
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+  // changing the menu to be responsive.
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+  // have menu overlay coming from left and right
+    &.show {
+      transform: translate3d(0, 0, 0); 
+    }
+  }
+  // menu coming from the left
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  // menu coming from the right
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    // changing portrait size
+    .portrait {
+      background: url('../img/mecropped1.jpg');
+      width: 190px;
+      height: 190px;
+      background-position: center;
+    }
+  }
+}
+
+// phone
+@include mediaSm {
+  // when web is shorter, still show as 10 viewport height
+  main#home h1 {
+    margin-top: 10vh;
+  }
+}
