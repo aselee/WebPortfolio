@@ -13,7 +13,11 @@
     height: 3px;
     // top , top-right, bottom, left
     margin: 0 0 5px 0;
-    background: #fff;
+
+    // background: #fff;
+    // setting colors when primary color changes
+    background: set-text-color($primary-color);
+
     @include easeOut;
   }
   // adding sass in the button line
@@ -128,7 +132,7 @@
     }
     // class current a tag links with color
     // Home link will have secondary color automatically
-    
+
     // &.current > a {
     //   color: $secondary-color;
     // }
@@ -141,7 +145,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+
+    // color: #fff;
+    // setting colors when primary color changes
+    color: set-text-color($primary-color);
+    
     text-decoration: none;
     
     @include easeOut;

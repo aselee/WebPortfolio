@@ -35,6 +35,16 @@ $background-opacity: 0.2;
   }
 }
 
+// setting text color
+// need to set it as a function
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000000;
+  } @else {
+    @return #fff;
+  }
+}
+
 // media queries mixins web responsiveness
 
 // anything that is in the mixin will automatically be responsive
