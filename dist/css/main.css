@@ -203,6 +203,24 @@ main {
   background: #00ffc0;
   color: #333; }
 
+.c-form {
+  display: block;
+  border: none;
+  margin: 50px auto;
+  max-width: 500px; }
+  .c-form__heading {
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 1.2;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0; }
+  .c-form__row + .c-form__row {
+    padding-top: 25px; }
+  .c-form__row [name] {
+    min-width: 66.66667%; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
