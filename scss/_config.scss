@@ -1,8 +1,8 @@
 // sass colors:
-$primary-color: #444;
-$secondary-color: #eece1a;
-$tertiary-color: #00FFC0;
-// $quaternary-color: #fff;
+$primary-color: #fff;
+$secondary-color: #CC554C;
+$tertiary-color: #103BA1;
+$quaternary-color: #000000;
 // $quinary-color: #333;
 // $senary-color: #333;
 // $septenary-color: #333;
@@ -10,16 +10,11 @@ $tertiary-color: #00FFC0;
 // $nonary-color: #333;
 // $denary-color: #333;
 
-
+//////////////////////////////
 // home background image
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
+// $home-image: url(../img/backgrounddd.jpg);
 $background-opacity: 0.2;
-
-// about background image
-// $show-about-image: true;
-// $about-image: url(../img/backgroundd.jpg);
-// $background-opacity: 0.1;
 
 @mixin easeOut {
   // adding transition for icon color
@@ -30,9 +25,9 @@ $background-opacity: 0.2;
 @mixin background {
   @if $show-home-image{
     &#bg-img {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
+      // background: $home-image;
+      // background-attachment: fixed;
+      // background-size: cover;
 
   // instead of adding a overlay class div
   // use sudo element thats not in the html,
@@ -54,27 +49,34 @@ $background-opacity: 0.2;
 // possibly adding a different background image in pages
 // error showing that only one background image works for one page.
 
-// // ABOUT PAGE
-// @mixin background {
-//   @if $show-about-image {
-//     &#bg-img-about {
-//       background: $about-image;
-//       background-attachment: fixed;
-//       background-size: cover;
+//////////////////////////////
+// about background page
+$show-about-image: true;
+$about-image: url(../img/backgroundd.jpg);
+$background-about-opacity: 0;
 
-//       &:after {
-//         content: '';
-//         position: absolute;
-//         top: 0;
-//         right: 0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: -1;
-//         background: rgba($primary-color, $background-opacity);
-//       }
-//     }
-//   }
-// }
+
+// // ABOUT PAGE
+@mixin background {
+  @if $show-about-image {
+    &#bg-img-about {
+      background: $about-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-about-opacity);
+      }
+    }
+  }
+}
 
 
 

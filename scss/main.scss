@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+// changing background color
 body {
   @include background;
   background: $primary-color;
@@ -52,7 +54,7 @@ header {
 }
 
 .text-secondary {
-  color: $secondary-color;
+  color: $tertiary-color;
 }
 
 main {
@@ -69,9 +71,10 @@ main {
     margin-top: 1rem;
     a {
       padding: 0.4rem;
+      color: #000000;
 
       &:hover{
-        color: $secondary-color;
+        color: $tertiary-color;
         @include easeOut();
       }
     }
@@ -215,7 +218,7 @@ $rhythm: 25px;
     }
   }
 }
-
+////////////////////////
 
 // Footer
 #main-footer {
