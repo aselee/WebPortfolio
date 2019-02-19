@@ -54,6 +54,9 @@ header {
 }
 
 // heading colors
+.text-secondary {
+  color: #000000;
+}
 .text-secondary-home {
   color: $tertiary-color;
 }
@@ -144,7 +147,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: $quaternary-color 3px solid;
   }
   
   .bio {
@@ -156,7 +159,7 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $quaternary-color 5px solid;
   }
   
   .job-1 {
@@ -185,10 +188,10 @@ main {
     width: 100%;
     border: 3px #000000 solid;
 
-    // adding hover 
+    // adding hover in projects
     &:hover {
       opacity: 0.5;
-      border-color: $secondary-color;
+      border-color: $quinary-color;
       @include easeOut;
     }
   }
