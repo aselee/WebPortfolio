@@ -50,36 +50,6 @@ $background-opacity: 0.2;
 // error showing that only one background image works for one page.
 
 //////////////////////////////
-// about background page
-
-$show-about-image: true;
-// $about-image: url(../img/backgroundd.jpg);
-$background-about-opacity: 0;
-
-
-// ABOUT PAGE
-@mixin background {
-  @if $show-about-image {
-    &#bg-img-about {
-      // background: $about-image;
-      background-attachment: fixed;
-      background-size: cover;
-
-    // project image
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-about-opacity);
-      }
-    }
-  }
-}
-
 
 
 // setting text color in about page
