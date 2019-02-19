@@ -74,7 +74,7 @@ main {
       color: #000000;
 
       &:hover{
-        color: $tertiary-color;
+        color: $secondary-color;
         @include easeOut();
       }
     }

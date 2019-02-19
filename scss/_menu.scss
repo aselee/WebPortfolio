@@ -94,6 +94,20 @@
       // slide in the menu from top
       transform: translate3d(0, 0, 0);
     }
+
+    // Social icons colors and ease out in menu overlay
+    .icons-social{
+      margin-top: 1rem;
+      a {
+        padding: 0.4rem;
+        color: #000000;
+  
+        &:hover{
+          color: $secondary-color;
+          @include easeOut();
+        }
+      }
+    }
   }
 
 

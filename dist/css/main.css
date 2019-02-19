@@ -46,6 +46,14 @@
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
+    .menu-nav .icons-social {
+      margin-top: 1rem; }
+      .menu-nav .icons-social a {
+        padding: 0.4rem;
+        color: #000000; }
+        .menu-nav .icons-social a:hover {
+          color: #CC554C;
+          transition: all 0.5s ease-out; }
   .menu-branding {
     background: #fff;
     transform: translate3d(0, 100%, 0);
@@ -142,7 +150,7 @@ main {
       padding: 0.4rem;
       color: #000000; }
       main .icons-social a:hover {
-        color: #fff;
+        color: #CC554C;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
