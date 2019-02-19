@@ -69,12 +69,30 @@ main {
   // nesting the icons 
   .icons-social{
     margin-top: 1rem;
-    a {
+    .git {
       padding: 0.4rem;
       color: #000000;
 
       &:hover{
-        color: $secondary-color;
+        color: $senary-color;
+        @include easeOut();
+      }
+    }
+    .linked {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $septenary-color;
+        @include easeOut();
+      }
+    }
+    .insta {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $octonary-color;
         @include easeOut();
       }
     }
@@ -230,33 +248,41 @@ $rhythm: 25px;
   // background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+
+
+  // Adding icons scss in footer
+  .icons-social{
+    margin-top: 1rem;
+    .git {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $senary-color;
+        @include easeOut();
+      }
+    }
+    .linked {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $septenary-color;
+        @include easeOut();
+      }
+    }
+    .insta {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $octonary-color;
+        @include easeOut();
+      }
+    }
+  }
 }
 
 // add import mobile at the bottom of the scss,
 // so the media queries will run after the initial css.
 @import 'mobile';
-
-// landing page css
-
-// main {
-// 	display: flex;
-// 	flex-direction: column;
-// 	min-height: 100vh;
-// 	justify-content: center;
-// 	padding: 0 30px;
-// 	text-align: center;
-// }
-
-
-// main > .lg-heading {
-// 	font-family: 'Reem Kufi', sans-serif;
-// 	font-size: 3.75em;
-// 	font-weight: 600;
-// }
-
-// main > .sm-heading {
-// 	font-size: 1.5rem;
-// 	margin: 1.5rem 0;
-//   font-weight: 100;
-//   font-family: 'Reem Kufi', sans-serif;
-// }

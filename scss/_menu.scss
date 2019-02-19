@@ -96,14 +96,32 @@
     }
 
     // Social icons colors and ease out in menu overlay
-    .icons-social{
+    .icons-social-menu{
       margin-top: 1rem;
-      a {
+      .git {
         padding: 0.4rem;
         color: #000000;
   
         &:hover{
-          color: $secondary-color;
+          color: $senary-color;
+          @include easeOut();
+        }
+      }
+      .linked {
+        padding: 0.4rem;
+        color: #000000;
+  
+        &:hover{
+          color: $septenary-color;
+          @include easeOut();
+        }
+      }
+      .insta {
+        padding: 0.4rem;
+        color: #000000;
+  
+        &:hover{
+          color: $octonary-color;
           @include easeOut();
         }
       }
