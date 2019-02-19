@@ -148,95 +148,6 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.6s; }
 
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #fff;
-  color: #000000;
-  height: 100%;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5; }
-  body#bg-img-about {
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img-about:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(255, 255, 255, 0); }
-
-h1, h2, h3 {
-  margin: 0;
-  font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
-    font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1 rem; }
-
-a {
-  color: #fff;
-  text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
-
-.text-secondary {
-  color: #000000; }
-
-.text-secondary-home {
-  color: #f6546a; }
-
-.text-secondary-about {
-  color: #4286f5; }
-
-.text-secondary-project {
-  color: #32b67a; }
-
-.text-secondary-contact {
-  color: #8e24aa; }
-
-main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px); }
-  main .icons-social {
-    margin-top: 1rem; }
-    main .icons-social .git {
-      padding: 0.4rem;
-      color: #000000; }
-      main .icons-social .git:hover {
-        color: #CC554C;
-        transition: all 0.5s ease-out; }
-    main .icons-social .linked {
-      padding: 0.4rem;
-      color: #000000; }
-      main .icons-social .linked:hover {
-        color: #0077B5;
-        transition: all 0.5s ease-out; }
-    main .icons-social .insta {
-      padding: 0.4rem;
-      color: #000000; }
-      main .icons-social .insta:hover {
-        color: #C13584;
-        transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh;
-      text-align: center; }
-    main#home h2 {
-      text-align: center; }
-    main#home .icons-social {
-      text-align: center; }
-
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -336,6 +247,95 @@ main {
       #main-footer .icons-social .insta:hover {
         color: #C13584;
         transition: all 0.5s ease-out; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  color: #000000;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5; }
+  body#bg-img-about {
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img-about:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(255, 255, 255, 0); }
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1 rem; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #000000; }
+
+.text-secondary-home {
+  color: #f6546a; }
+
+.text-secondary-about {
+  color: #4286f5; }
+
+.text-secondary-project {
+  color: #32b67a; }
+
+.text-secondary-contact {
+  color: #8e24aa; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons-social {
+    margin-top: 1rem; }
+    main .icons-social .git {
+      padding: 0.4rem;
+      color: #000000; }
+      main .icons-social .git:hover {
+        color: #CC554C;
+        transition: all 0.5s ease-out; }
+    main .icons-social .linked {
+      padding: 0.4rem;
+      color: #000000; }
+      main .icons-social .linked:hover {
+        color: #0077B5;
+        transition: all 0.5s ease-out; }
+    main .icons-social .insta {
+      padding: 0.4rem;
+      color: #000000; }
+      main .icons-social .insta:hover {
+        color: #C13584;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh;
+      text-align: center; }
+    main#home h2 {
+      text-align: center; }
+    main#home .icons-social {
+      text-align: center; }
 
 @media screen and (max-width: 1171px) {
   .projects {

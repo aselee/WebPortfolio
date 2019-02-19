@@ -1,0 +1,42 @@
+// Footer
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  // background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+
+
+  // Adding icons scss in footer
+  .icons-social{
+    margin-top: 1rem;
+    .git {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $senary-color;
+        @include easeOut();
+      }
+    }
+    .linked {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $septenary-color;
+        @include easeOut();
+      }
+    }
+    .insta {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $octonary-color;
+        @include easeOut();
+      }
+    }
+  }
+}

@@ -1,5 +1,10 @@
 @import 'config';
 @import 'menu';
+@import 'about';
+@import 'project';
+@import 'contact';
+@import 'footer';
+
 
 // * => selecting everything in css
 * {
@@ -132,176 +137,20 @@ main {
 ////////////////////////////
 
 // About page scss
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas: 
-  'bioimage bio bio'
-  'job1 job2 job3';
-  // grid-template-columns: 1fr 1fr 1fr
 
-  grid-template-columns: repeat(3, 1fr);
-
-// nesting bio  in about page
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $quaternary-color 3px solid;
-  }
-  
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-  
-  // adding border for job descriptions
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $quaternary-color 5px solid;
-  }
-  
-  .job-1 {
-    grid-area: job1
-  }
-  
-  .job-2 {
-    grid-area: job2
-  }
-  
-  .job-3 {
-    grid-area: job3
-  }
-}
 ////////////////////////////
 
-// Projects page scss
-.projects {
-  display: grid;
-  // grid-gap: 20px; // can use px or rem
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-
-
-  img {
-    width: 100%;
-    border: 3px #000000 solid;
-
-    // adding hover in projects
-    &:hover {
-      opacity: 0.5;
-      border-color: $quinary-color;
-      @include easeOut;
-    }
-  }
-}
-
-// Projects button scss
-.btn {
-  // display: inline-block;
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-  text-align: center;
-
-  &:hover {
-    background: $quinary-color;
-    color: set-text-color($secondary-color);
-  }
-}
-
-// adding scss styles to both buttons. 
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
-  border: 1px solid #000000;
-}
-
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 0);
-  color: #333;
-  border: 1px solid #000000;
-}
+// Project page scss
 
 ////////////////////////////
 
 // Contact page scss
-$rhythm: 25px;
 
-// form component
-.c-form {
-  display: block;
-  border: none;
-  margin: #{ $rhythm * 2} auto;
-  max-width: 500px;
+////////////////////////////
 
-  &__heading{
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 1.2;
-    border-bottom: 1px solid #fff;
-    padding: 0 0 5px 0;
-    margin: 0 0 10px 0;
-  }
+// Footer scss
 
-  &__row {
-    & + & {
-      padding-top: $rhythm;
-    }
-    // make any field fill atleast 2/3
-    [name] {
-      min-width: percentage(2/3);
-    }
-  }
-}
-////////////////////////
-
-// Footer
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  // background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 60px;
-
-
-  // Adding icons scss in footer
-  .icons-social{
-    margin-top: 1rem;
-    .git {
-      padding: 0.4rem;
-      color: #000000;
-
-      &:hover{
-        color: $senary-color;
-        @include easeOut();
-      }
-    }
-    .linked {
-      padding: 0.4rem;
-      color: #000000;
-
-      &:hover{
-        color: $septenary-color;
-        @include easeOut();
-      }
-    }
-    .insta {
-      padding: 0.4rem;
-      color: #000000;
-
-      &:hover{
-        color: $octonary-color;
-        @include easeOut();
-      }
-    }
-  }
-}
+////////////////////////////
 
 // add import mobile at the bottom of the scss,
 // so the media queries will run after the initial css.
