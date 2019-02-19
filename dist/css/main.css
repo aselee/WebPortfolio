@@ -100,7 +100,6 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5; }
   body#bg-img-about {
-    background: url(../img/backgroundd.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img-about:after {
@@ -132,7 +131,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #103BA1; }
+  color: #CC554C; }
 
 main {
   padding: 4rem;
@@ -143,7 +142,7 @@ main {
       padding: 0.4rem;
       color: #000000; }
       main .icons-social a:hover {
-        color: #103BA1;
+        color: #fff;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -193,16 +192,18 @@ main {
   margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #CC554C;
+    background: #ffff66;
     color: #000000; }
 
 .btn-dark {
   background: gray;
-  color: #fff; }
+  color: #fff;
+  border: 1px solid #000000; }
 
 .btn-light {
-  background: #103ba1;
-  color: #333; }
+  background: white;
+  color: #333;
+  border: 1px solid #000000; }
 
 .c-form {
   display: block;

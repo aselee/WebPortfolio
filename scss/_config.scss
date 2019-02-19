@@ -1,9 +1,9 @@
 // sass colors:
 $primary-color: #fff;
 $secondary-color: #CC554C;
-$tertiary-color: #103BA1;
+$tertiary-color: #fff;
 $quaternary-color: #000000;
-// $quinary-color: #333;
+$quinary-color: #ffff66;
 // $senary-color: #333;
 // $septenary-color: #333;
 // $octonary-color: #333;
@@ -51,19 +51,21 @@ $background-opacity: 0.2;
 
 //////////////////////////////
 // about background page
+
 $show-about-image: true;
-$about-image: url(../img/backgroundd.jpg);
+// $about-image: url(../img/backgroundd.jpg);
 $background-about-opacity: 0;
 
 
-// // ABOUT PAGE
+// ABOUT PAGE
 @mixin background {
   @if $show-about-image {
     &#bg-img-about {
-      background: $about-image;
+      // background: $about-image;
       background-attachment: fixed;
       background-size: cover;
 
+    // project image
       &:after {
         content: '';
         position: absolute;
@@ -80,7 +82,7 @@ $background-about-opacity: 0;
 
 
 
-// setting text color
+// setting text color in about page
 // need to set it as a function
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
