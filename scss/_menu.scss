@@ -169,8 +169,10 @@
     //   color: $secondary-color;
     // }
   }
-
-  .nav-link {
+  
+// menu nav links
+  // home link menu
+  .nav-link-home {
     display: inline-block;
     position: relative;
     font-size: 30px;
@@ -188,7 +190,73 @@
 
     // when hover links, color will show
     &:hover {
-      color: $secondary-color;
+      color: $tertiary-color;
+    }
+  }
+  // about link menu
+  .nav-link-about {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+
+    // color: #fff;
+    // setting colors when primary color changes
+    color: set-text-color($primary-color);
+    
+    text-decoration: none;
+    
+    @include easeOut;
+
+    // when hover links, color will show
+    &:hover {
+      color: $quaternary-color;
+    }
+  }
+   // project link menu
+   .nav-link-project {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+
+    // color: #fff;
+    // setting colors when primary color changes
+    color: set-text-color($primary-color);
+    
+    text-decoration: none;
+    
+    @include easeOut;
+
+    // when hover links, color will show
+    &:hover {
+      color: $quinary-color;
+    }
+  }
+    // contact link menu
+    .nav-link-contact {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+
+    // color: #fff;
+    // setting colors when primary color changes
+    color: set-text-color($primary-color);
+    
+    text-decoration: none;
+    
+    @include easeOut;
+
+    // when hover links, color will show
+    &:hover {
+      color: $nonary-color;
     }
   }
 }
@@ -206,8 +274,37 @@
 }
 
 
+///////////////////////////////////////////////////////////
+// Notes
+
 // transform css
 // https://developer.mozilla.org/en-US/docs/Web/CSS/transform
 
 // translate3d()
 // https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d
+
+
+// previous code for menu nav links css
+
+// // menu nav links
+// .nav-link {
+//   display: inline-block;
+//   position: relative;
+//   font-size: 30px;
+//   text-transform: uppercase;
+//   padding: 1rem 0;
+//   font-weight: 300;
+
+//   // color: #fff;
+//   // setting colors when primary color changes
+//   color: set-text-color($primary-color);
+  
+//   text-decoration: none;
+  
+//   @include easeOut;
+
+//   // when hover links, color will show
+//   &:hover {
+//     color: $secondary-color;
+//   }
+// }

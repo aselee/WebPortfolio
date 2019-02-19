@@ -84,7 +84,7 @@
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
-  .menu .nav-link {
+  .menu .nav-link-home {
     display: inline-block;
     position: relative;
     font-size: 30px;
@@ -94,8 +94,44 @@
     color: #000000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
-    .menu .nav-link:hover {
-      color: #ffea00; }
+    .menu .nav-link-home:hover {
+      color: #f6546a; }
+  .menu .nav-link-about {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link-about:hover {
+      color: #4286f5; }
+  .menu .nav-link-project {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link-project:hover {
+      color: #32b67a; }
+  .menu .nav-link-contact {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link-contact:hover {
+      color: #8e24aa; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.15s; }
@@ -229,7 +265,7 @@ main {
   margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #ffff66;
+    background: #32b67a;
     color: #000000; }
 
 .btn-dark {
