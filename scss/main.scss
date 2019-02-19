@@ -53,8 +53,18 @@ header {
   width: 100%;
 }
 
-.text-secondary {
-  color: $secondary-color;
+// heading colors
+.text-secondary-home {
+  color: $tertiary-color;
+}
+.text-secondary-about {
+  color: $quaternary-color;
+}
+.text-secondary-project {
+  color: $quinary-color;
+}
+.text-secondary-contact {
+  color: $nonary-color;
 }
 
 main {

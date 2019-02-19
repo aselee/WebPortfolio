@@ -35,12 +35,11 @@
     float: left;
     width: 50%;
     height: 100vh;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.9); }
+    overflow: hidden; }
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(242, 242, 242, 0.9);
+    background: #f2f2f2;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -186,8 +185,17 @@ header {
   z-index: 2;
   width: 100%; }
 
-.text-secondary {
-  color: #ffea00; }
+.text-secondary-home {
+  color: #f6546a; }
+
+.text-secondary-about {
+  color: #4286f5; }
+
+.text-secondary-project {
+  color: #32b67a; }
+
+.text-secondary-contact {
+  color: #8e24aa; }
 
 main {
   padding: 4rem;

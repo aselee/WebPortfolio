@@ -74,15 +74,15 @@
       height: 100vh;
       overflow: hidden;
       // background transpancy
-      background: rgba($primary-color, 0.9);
+      // background: rgba($primary-color, 0.9);
   }
 
   &-nav {
     margin: 0;
     padding: 0;
-
-    // background: darken($primary-color, 5);
-    background: rgba(darken($primary-color, 5), 0.9);
+   // left side of the menu
+    background: darken($primary-color, 5);
+    // background: rgba(darken($primary-color, 5), 0.9);
 
     // taking the bullet points off
     list-style: none;
