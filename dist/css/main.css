@@ -179,7 +179,12 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 20vh; }
+      margin-top: 20vh;
+      text-align: center; }
+    main#home h2 {
+      text-align: center; }
+    main#home .icons-social {
+      text-align: center; }
 
 .about-info {
   display: grid;
