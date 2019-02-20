@@ -12,8 +12,8 @@ $nonary-color: #8e24aa; // contact color menu
 
 //////////////////////////////
 // home background image
-$show-home-image: true;
-// $home-image: url(../img/backgrounddd.jpg);
+$show-home-image: false; // turning off bg image; put true to show image
+$home-image: url(../img/backgrounddd.jpg);
 $background-opacity: 0.2;
 
 @mixin easeOut {
@@ -25,9 +25,9 @@ $background-opacity: 0.2;
 @mixin background {
   @if $show-home-image{
     &#bg-img {
-      // background: $home-image;
-      // background-attachment: fixed;
-      // background-size: cover;
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
 
   // instead of adding a overlay class div
   // use sudo element thats not in the html,
