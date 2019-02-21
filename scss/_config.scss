@@ -12,9 +12,9 @@ $nonary-color: #8e24aa; // contact color menu
 
 //////////////////////////////
 // home background image
-$show-home-image: false; // turning off bg image; put true to show image
-$home-image: url(../img/backgrounddd.jpg);
-$background-opacity: 0.2;
+$show-home-image: true; // turning off bg image; put true to show image
+$home-image: url(../img/testbg1.jpg);
+$background-opacity: 0;
 
 @mixin easeOut {
   // adding transition for icon color
@@ -23,15 +23,17 @@ $background-opacity: 0.2;
 
 // HOME PAGE
 @mixin background {
-  @if $show-home-image{
+  @if $show-home-image {
     &#bg-img {
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      // background-repeat: no-repeat;
+      background-position: center center;
 
-  // instead of adding a overlay class div
-  // use sudo element thats not in the html,
-  // but css reads it still
+
+  // menu overlay
+  // instead of the overlay class, using sudo element after
       &:after {
         content: '';
         position: absolute;
@@ -46,9 +48,6 @@ $background-opacity: 0.2;
   }
 }
 
-// possibly adding a different background image in pages
-// error showing that only one background image works for one page.
-
 //////////////////////////////
 
 
@@ -62,7 +61,7 @@ $background-opacity: 0.2;
   }
 }
 
-// media queries mixins web responsiveness
+// Media query mixins web responsiveness
 
 // anything that is in the mixin will automatically be responsive
 @mixin mediaSm {

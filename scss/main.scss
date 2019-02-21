@@ -11,14 +11,13 @@
   box-sizing: border-box;
 }
 
-
 // changing background color
 body {
   @include background;
   background: $primary-color;
   // color: #000000;
   // color: #fff;
-  // seting text color
+  // setting text color
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
