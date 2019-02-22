@@ -11,5 +11,3 @@ Using HTML, CSS, Sass, and vanilla JavaScript to create my web portfolio.
 ## contact
 using boilerform for contact page
 
-trying material design css framework (muicss)
-- npm i muicss
