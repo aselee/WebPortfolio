@@ -9,7 +9,6 @@
   "author": "Andrew L",
   "license": "MIT",
   "dependencies": {
-    "muicss": "^0.9.41",
     "node-sass": "^4.11.0"
   }
 }
