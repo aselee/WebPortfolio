@@ -7,7 +7,5 @@ Using HTML, CSS, Sass, and vanilla JavaScript to create my web portfolio.
 
 - npm run sass with live server
 
-
-## contact
 using boilerform for contact page
 
