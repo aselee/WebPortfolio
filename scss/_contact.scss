@@ -2,6 +2,11 @@
 
 $rhythm: 25px;
 
+
+#test {
+  text-align: center;
+}
+
 // form component
 .c-form {
   display: block;
@@ -10,19 +15,10 @@ $rhythm: 25px;
   max-width: 500px;
   
 
-  &__heading{
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 1.2;
-    border-bottom: 1px solid #fff;
-    padding: 0 0 5px 0;
-    margin: 0 0 10px 0;
-  }
-
   &__row {
     & + & {
       padding-top: $rhythm;
+      
     }
     // make any field fill atleast 2/3
     [name] {

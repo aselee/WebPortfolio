@@ -7,7 +7,6 @@
   'bioimage bio bio'
   'job1 job2 job3';
   // grid-template-columns: 1fr 1fr 1fr
-
   grid-template-columns: repeat(3, 1fr);
 
 // nesting bio  in about page
@@ -23,14 +22,14 @@
     font-size: 1.5rem;
   }
   
-  // adding border for job descriptions
-  .job {
+  // adding border for descriptions
+  .des {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $quaternary-color 5px solid;
   }
   
-  .job-1 {
+  .des-1 {
     grid-area: job1
   }
   

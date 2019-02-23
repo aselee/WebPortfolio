@@ -161,11 +161,11 @@
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job {
+  .about-info .des {
     background: white;
     padding: 0.5rem;
     border-bottom: #4286f5 5px solid; }
-  .about-info .job-1 {
+  .about-info .des-1 {
     grid-area: job1; }
   .about-info .job-2 {
     grid-area: job2; }
@@ -204,19 +204,14 @@
   color: #333;
   border: 1px solid #000000; }
 
+#test {
+  text-align: center; }
+
 .c-form {
   display: block;
   border: none;
   margin: 50px auto;
   max-width: 500px; }
-  .c-form__heading {
-    display: block;
-    width: 100%;
-    font-size: 2rem;
-    line-height: 1.2;
-    border-bottom: 1px solid #fff;
-    padding: 0 0 5px 0;
-    margin: 0 0 10px 0; }
   .c-form__row + .c-form__row {
     padding-top: 25px; }
   .c-form__row [name] {
