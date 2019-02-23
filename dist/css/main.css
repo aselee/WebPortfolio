@@ -158,6 +158,10 @@
     margin: auto;
     border-radius: 50%;
     border: #4286f5 3px solid; }
+    .about-info .bio-image:hover {
+      opacity: 0.5;
+      border-color: #4286f5;
+      transition: all 0.5s ease-out; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }

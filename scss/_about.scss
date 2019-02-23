@@ -9,12 +9,19 @@
   // grid-template-columns: 1fr 1fr 1fr
   grid-template-columns: repeat(3, 1fr);
 
-// nesting bio  in about page
+// nesting bio in about page
   .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: $quaternary-color 3px solid;
+
+    // adding hover to bio image
+    &:hover {
+      opacity: 0.5;
+      border-color: $quaternary-color;
+      @include easeOut;
+    }
   }
   
   .bio {
