@@ -217,6 +217,14 @@
   .c-form__row [name] {
     min-width: 66.66667%; }
 
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: red;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: none; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;

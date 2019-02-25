@@ -21,3 +21,13 @@ $rhythm: 25px;
     }
   }
 }
+
+// alert message 
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: red;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: none;
+}
