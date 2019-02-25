@@ -38,7 +38,7 @@ function submitForm(e) {
     document.querySelector('.alert').style.display = "none";
   }, 3000);
 
-  // clear contact  form after submission
+  // clear contact form after submission
   document.getElementById('contactForm').reset();
 
   // console.log(name);
