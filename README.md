@@ -1,6 +1,8 @@
 ###### Web Portfolio
 
-Using HTML, CSS, Sass, and vanilla JavaScript to create my web portfolio.
+Using HTML, CSS, Sass, and vanilla JavaScript to create web portfolio.
+
+Using Google Firebase database.
 
 - npm init
 - npm i node-sass
