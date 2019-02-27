@@ -112,6 +112,15 @@ main {
         @include easeOut();
       }
     }
+    .email {
+      padding: 0.4rem;
+      color: #000000;
+
+      &:hover{
+        color: $denary-color;
+        @include easeOut();
+      }
+    }
   }
 
   // any main that has the id of home

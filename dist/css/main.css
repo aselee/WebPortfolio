@@ -51,7 +51,7 @@
         padding: 0.4rem;
         color: #000000; }
         .menu-nav .icons-social-menu .git:hover {
-          color: #CC554C;
+          color: #A9A9A9;
           transition: all 0.5s ease-out; }
       .menu-nav .icons-social-menu .linked {
         padding: 0.4rem;
@@ -64,6 +64,12 @@
         color: #000000; }
         .menu-nav .icons-social-menu .insta:hover {
           color: #C13584;
+          transition: all 0.5s ease-out; }
+      .menu-nav .icons-social-menu .email {
+        padding: 0.4rem;
+        color: #000000; }
+        .menu-nav .icons-social-menu .email:hover {
+          color: #D44638;
           transition: all 0.5s ease-out; }
   .menu-branding {
     background: #fff;
@@ -95,7 +101,7 @@
   text-decoration: none;
   transition: all 0.5s ease-out; }
   .nav-link-home:hover {
-    color: #f6546a; }
+    color: #FFA500; }
 
 .nav-link-about {
   display: inline-block;
@@ -220,7 +226,7 @@
 .alert {
   text-align: center;
   padding: 10px;
-  background: red;
+  background: #4AC948;
   color: #ffffff;
   margin-bottom: 10px;
   display: none; }
@@ -236,7 +242,7 @@
       padding: 0.4rem;
       color: #000000; }
       #main-footer .icons-social .git:hover {
-        color: #CC554C;
+        color: #A9A9A9;
         transition: all 0.5s ease-out; }
     #main-footer .icons-social .linked {
       padding: 0.4rem;
@@ -249,6 +255,12 @@
       color: #000000; }
       #main-footer .icons-social .insta:hover {
         color: #C13584;
+        transition: all 0.5s ease-out; }
+    #main-footer .icons-social .email {
+      padding: 0.4rem;
+      color: #000000; }
+      #main-footer .icons-social .email:hover {
+        color: #D44638;
         transition: all 0.5s ease-out; }
 
 * {
@@ -284,7 +296,7 @@ header {
   color: #000000; }
 
 .text-secondary-home {
-  color: #f6546a; }
+  color: #FFA500; }
 
 .text-secondary-about {
   color: #4286f5; }
@@ -304,7 +316,7 @@ main {
       padding: 0.4rem;
       color: #000000; }
       main .icons-social .git:hover {
-        color: #CC554C;
+        color: #A9A9A9;
         transition: all 0.5s ease-out; }
     main .icons-social .linked {
       padding: 0.4rem;
@@ -317,6 +329,12 @@ main {
       color: #000000; }
       main .icons-social .insta:hover {
         color: #C13584;
+        transition: all 0.5s ease-out; }
+    main .icons-social .email {
+      padding: 0.4rem;
+      color: #000000; }
+      main .icons-social .email:hover {
+        color: #D44638;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }

@@ -36,7 +36,7 @@ function submitForm(e) {
   // hiding alert after x seconds
   setTimeout(function() {
     document.querySelector('.alert').style.display = "none";
-  }, 3000);
+  }, 4000);
 
   // clear contact form after submission
   document.getElementById('contactForm').reset();
